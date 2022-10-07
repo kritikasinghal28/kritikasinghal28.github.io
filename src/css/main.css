@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f8f0e3;
+}
+
+h2 {
+  text-align: center;
+}
+
+.inputContainer {
+  margin-top: 22px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-data {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.output-container {
+  margin: 5rem auto;
+  padding: 0 1rem;
+}
+
+.floor-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.floor {
+  display: flex;
+  align-items: flex-end;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.ground-floor-container {
+  height: 100%;
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn-move {
+  padding: 2px;
+  height: 2rem;
+}
+
+.lift {
+  border: 1px solid black;
+  height: 100px;
+  width: 66px;
+  margin-left: 20px;
+  position: relative;
+  display: inline-flex;
+}
+
+.left-door {
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  background-color: #4169e1;
+  justify-content: space-between;
+  transition-duration: 2.5s;
+}
+
+.move-left {
+  transform: translate(-100%);
+  transition-duration: 2.5s;
+}
+
+.right-door {
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  background-color: #4169e1;
+  justify-content: space-between;
+  transition-duration: 2.5s;
+}
+
+.move-right {
+  transform: translate(100%);
+  transition-duration: 2.5s;
+}
+
+@media screen and (max-width: 500px) {
+  .lift {
+    height: 50px;
+    width: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .lift {
+    height: 90px;
+    width: 50px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .lift {
+    height: 90px;
+    width: 40px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .lift {
+    height: 80px;
+    width: 30px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .lift {
+    height: 60px;
+    width: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .lift {
+    height: 50px;
+    width: 15px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .lift {
+    height: 40px;
+    width: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .lift {
+    height: 30px;
+    width: 7px;
+    margin-top: 10px;
+  }
+
+  .right-door,
+  .left-door {
+    border: none;
+  }
+}
